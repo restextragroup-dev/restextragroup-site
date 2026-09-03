@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RESTEXTRAGROUP — ресторанні проекти</title>
+<title>RESTEXTRAGROUP — ресторанні проєкти</title>
 
-<meta name="description" content="RESTEXTRAGROUP — ресторанні проекти нового покоління. ЗАТОКА, OLIVA EXTRA, ШАМПУР HOUSE. Інвестиції та партнерство.">
+<meta name="description"
+content="RESTEXTRAGROUP — авторські ресторанні проєкти нового покоління. ЗАТОКА, OLIVA EXTRA, ШАМПУР HOUSE.">
 
 <style>
 * {
@@ -21,8 +22,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f2ec;
-    color: #202820;
+    background: #f5f1e9;
+    color: #20251f;
     line-height: 1.6;
 }
 
@@ -31,7 +32,7 @@ a {
     color: inherit;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 header {
     background: #1d281f;
@@ -39,275 +40,273 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.18);
+    box-shadow: 0 3px 15px rgba(0,0,0,.18);
 }
 
-.header-inner {
-    max-width: 1150px;
+.nav {
+    max-width: 1200px;
     margin: auto;
-    padding: 18px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+    padding: 22px 25px;
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
     letter-spacing: 1px;
-    white-space: nowrap;
+    margin-bottom: 20px;
 }
 
-nav {
+.menu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 22px;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 
-nav a {
-    font-size: 16px;
+.menu a {
+    font-size: 17px;
     color: white;
-    transition: 0.2s;
+    transition: .25s;
 }
 
-nav a:hover {
-    color: #d8c38a;
+.menu a:hover {
+    opacity: .65;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero {
-    min-height: 560px;
-    background:
-        linear-gradient(rgba(20,28,22,0.55), rgba(20,28,22,0.65)),
-        url("zatoka.jpg") center/cover no-repeat;
+    min-height: 620px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 50px 20px;
+    position: relative;
+
+    background:
+        linear-gradient(rgba(20,25,21,.55), rgba(20,25,21,.55)),
+        url("hero.jpg") center/cover no-repeat;
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 950px;
+    padding: 50px 25px;
 }
 
 .hero h1 {
-    font-size: clamp(42px, 8vw, 82px);
-    line-height: 1;
+    font-size: clamp(44px, 8vw, 90px);
+    font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
 .hero p {
     font-size: clamp(20px, 3vw, 30px);
-    margin-bottom: 35px;
 }
 
-/* BUTTONS */
+/* ================= GENERAL ================= */
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 14px 25px;
-    border-radius: 8px;
-    background: #1d281f;
-    color: white;
-    font-weight: 700;
-    border: 2px solid #1d281f;
-    transition: 0.25s;
-}
-
-.btn:hover {
-    background: #344637;
-    transform: translateY(-2px);
-}
-
-.btn-light {
-    background: white;
-    color: #1d281f;
-    border-color: white;
-}
-
-/* SECTIONS */
-
-section {
-    max-width: 1150px;
+.container {
+    max-width: 1200px;
     margin: auto;
-    padding: 75px 20px;
+    padding: 80px 25px;
 }
 
 .section-title {
     text-align: center;
-    font-size: clamp(32px, 5vw, 52px);
-    margin-bottom: 45px;
+    font-size: clamp(34px, 5vw, 52px);
+    margin-bottom: 20px;
 }
 
-/* PROJECTS */
+.section-subtitle {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 55px;
+    font-size: 20px;
+    color: #666;
+}
+
+/* ================= PROJECTS ================= */
 
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    gap: 30px;
 }
 
 .card {
     background: white;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 8px 30px rgba(0,0,0,.10);
+    transition: transform .25s, box-shadow .25s;
 }
 
-.card img {
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+.card-image {
     width: 100%;
-    height: 280px;
+    height: 300px;
     object-fit: cover;
     display: block;
+    background: #ddd;
 }
 
 .card-content {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    padding: 28px;
 }
 
-.card h3 {
-    font-size: 28px;
+.card h2 {
+    font-size: 29px;
     margin-bottom: 12px;
 }
 
 .card p {
-    color: #555;
-    margin-bottom: 22px;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 25px;
 }
 
-.card .btn {
-    margin-top: auto;
+.btn {
+    display: inline-block;
+    background: #1d281f;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 9px;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.btn:hover {
+    background: #354838;
+    transform: translateY(-2px);
+}
+
+/* ================= PROJECT SECTIONS ================= */
+
+.project-section {
+    padding: 90px 25px;
+}
+
+.project-inner {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-section:nth-child(even) {
+    background: #ebe5d9;
+}
+
+.project-title {
     text-align: center;
-}
-
-/* PROJECT DETAILS */
-
-.project-detail {
-    background: white;
-    max-width: 1150px;
-    margin: 35px auto;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-}
-
-.project-detail img {
-    width: 100%;
-    max-height: 550px;
-    object-fit: cover;
-    display: block;
+    font-size: clamp(38px, 6vw, 65px);
+    margin-bottom: 25px;
 }
 
 .project-text {
-    padding: 35px;
-}
-
-.project-text h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-.project-text p {
-    font-size: 18px;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
     color: #555;
-    margin-bottom: 20px;
 }
 
-/* INVESTMENTS */
+.project-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 45px auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.15);
+}
 
-.investments {
+.project-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ================= INVESTMENT ================= */
+
+.investment {
     background: #1d281f;
     color: white;
-    max-width: none;
-}
-
-.investments-inner {
-    max-width: 900px;
-    margin: auto;
     text-align: center;
 }
 
-.investments h2 {
-    font-size: clamp(35px, 6vw, 55px);
+.investment h2 {
+    font-size: clamp(36px, 5vw, 55px);
     margin-bottom: 20px;
 }
 
-.investments p {
+.investment p {
+    max-width: 800px;
+    margin: auto;
     font-size: 20px;
-    margin-bottom: 30px;
+    opacity: .9;
 }
 
-.investment-list {
-    text-align: left;
-    max-width: 650px;
-    margin: 30px auto;
+.investment .btn {
+    margin-top: 30px;
+    background: white;
+    color: #1d281f;
 }
 
-.investment-list li {
-    margin: 12px 0;
-    font-size: 18px;
-}
-
-/* CONTACTS */
+/* ================= CONTACTS ================= */
 
 .contacts {
+    background: #f5f1e9;
     text-align: center;
 }
 
-.contact-box {
-    max-width: 650px;
-    margin: auto;
-    background: white;
-    padding: 40px 25px;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+.contacts h2 {
+    font-size: clamp(38px, 5vw, 55px);
+    margin-bottom: 25px;
 }
 
-.contact-box h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
+.author {
+    font-size: 23px;
+    margin-bottom: 8px;
 }
 
 .phone {
-    display: block;
     font-size: 30px;
-    font-weight: 700;
-    margin: 15px 0 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
 }
 
 .contact-buttons {
     display: flex;
     justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
-    gap: 12px;
 }
 
-.contact-buttons a {
-    min-width: 145px;
+.contact-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 10px;
+    background: #1d281f;
+    color: white;
+    font-weight: 700;
+    transition: .25s;
 }
 
-/* FOOTER */
+.contact-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
 
 footer {
-    background: #111711;
+    background: #121712;
     color: #aaa;
     text-align: center;
     padding: 30px 20px;
@@ -317,20 +316,27 @@ footer strong {
     color: white;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
-    .header-inner {
-        flex-direction: column;
-        padding: 18px 12px;
+    .projects {
+        grid-template-columns: 1fr;
     }
 
-    nav {
-        gap: 12px 18px;
+    .nav {
+        padding: 18px 15px;
     }
 
-    nav a {
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 12px 22px;
+    }
+
+    .menu a {
         font-size: 15px;
     }
 
@@ -338,32 +344,52 @@ footer strong {
         min-height: 520px;
     }
 
-    .projects {
-        grid-template-columns: 1fr;
+    .container {
+        padding: 60px 18px;
     }
 
-    .card img {
-        height: 250px;
+    .project-section {
+        padding: 65px 18px;
     }
 
-    section {
-        padding: 55px 15px;
+    .project-image {
+        height: 300px;
     }
 
-    .project-text {
-        padding: 25px 20px;
+    .card-image {
+        height: 260px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .menu {
+        gap: 8px 16px;
     }
 
-    .project-text h2 {
-        font-size: 32px;
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+
+    .project-image {
+        height: 230px;
     }
 
     .contact-buttons {
         flex-direction: column;
-    }
-
-    .contact-buttons a {
-        width: 100%;
+        align-items: stretch;
     }
 }
 </style>
@@ -371,30 +397,28 @@ footer strong {
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
-    <div class="header-inner">
+    <nav class="nav">
 
-        <a href="#top" class="logo">
+        <div class="logo">
             RESTEXTRAGROUP
-        </a>
+        </div>
 
-        <nav>
-            <a href="#projects">Проекти</a>
+        <div class="menu">
+            <a href="#projects">Проєкти</a>
             <a href="#zatoka">ЗАТОКА</a>
             <a href="#oliva">OLIVA EXTRA</a>
             <a href="#shampur">ШАМПУР HOUSE</a>
             <a href="#contacts">Контакти</a>
-        </nav>
+        </div>
 
-    </div>
+    </nav>
 </header>
 
 
-<!-- HERO -->
-
-<main id="top">
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
@@ -403,57 +427,51 @@ footer strong {
         <h1>RESTEXTRAGROUP</h1>
 
         <p>
-            Ресторанні проекти нового покоління
+            Ресторанні проєкти нового покоління
         </p>
-
-        <div class="buttons">
-
-            <a href="#projects" class="btn">
-                Наші проекти
-            </a>
-
-            <a href="#contacts" class="btn btn-light">
-                Зв'язатися
-            </a>
-
-        </div>
 
     </div>
 
 </section>
 
 
-<!-- PROJECTS -->
+<!-- ================= PROJECTS ================= -->
 
-<section id="projects">
+<section id="projects" class="container">
 
     <h2 class="section-title">
-        Ресторанні проекти
+        Ресторанні проєкти
     </h2>
+
+    <p class="section-subtitle">
+        Авторські концепції, дизайн, кухня та бізнес-моделі
+        для сучасного ресторанного бізнесу.
+    </p>
+
 
     <div class="projects">
 
 
-        <!-- ZATOКА -->
+        <!-- ЗАТОКА -->
 
         <article class="card">
 
             <img
+                class="card-image"
                 src="zatoka.jpg"
                 alt="ЗАТОКА"
-                loading="lazy"
             >
 
             <div class="card-content">
 
-                <h3>ЗАТОКА</h3>
+                <h2>ЗАТОКА</h2>
 
                 <p>
-                    Курортна кухня, атмосфера моря та сонця,
-                    формат ресторану з концепцією ALL INCLUSIVE.
+                    Курортна кухня, атмосфера моря,
+                    All Inclusive та справжня свобода відпочинку.
                 </p>
 
-                <a href="#zatoka" class="btn">
+                <a class="btn" href="#zatoka">
                     Детальніше
                 </a>
 
@@ -467,21 +485,21 @@ footer strong {
         <article class="card">
 
             <img
+                class="card-image"
                 src="oliva-extra.jpg"
                 alt="OLIVA EXTRA"
-                loading="lazy"
             >
 
             <div class="card-content">
 
-                <h3>OLIVA EXTRA</h3>
+                <h2>OLIVA EXTRA</h2>
 
                 <p>
-                    Елегантний ресторан із кухнею сонця та моря:
-                    паста, антипасті, морепродукти та вино.
+                    Елегантний ресторан із кухнею сонця та моря,
+                    італійською атмосферою та середземноморським характером.
                 </p>
 
-                <a href="#oliva" class="btn">
+                <a class="btn" href="#oliva">
                     Детальніше
                 </a>
 
@@ -490,26 +508,26 @@ footer strong {
         </article>
 
 
-        <!-- SHAMPUR HOUSE -->
+        <!-- ШАМПУР HOUSE -->
 
         <article class="card">
 
             <img
+                class="card-image"
                 src="shampur-house.jpg"
                 alt="ШАМПУР HOUSE"
-                loading="lazy"
             >
 
             <div class="card-content">
 
-                <h3>ШАМПУР HOUSE</h3>
+                <h2>ШАМПУР HOUSE</h2>
 
                 <p>
                     М'ясо з вогню, шашлик, люля-кебаб
-                    та сучасна атмосфера гриль-ресторану.
+                    та сучасна атмосфера grill-ресторану.
                 </p>
 
-                <a href="#shampur" class="btn">
+                <a class="btn" href="#shampur">
                     Детальніше
                 </a>
 
@@ -522,39 +540,34 @@ footer strong {
 </section>
 
 
-<!-- ZATOКА -->
+<!-- ================= ZATOKA ================= -->
 
-<section id="zatoka">
+<section id="zatoka" class="project-section">
 
-    <div class="project-detail">
+    <div class="project-inner">
+
+        <h2 class="project-title">
+            ЗАТОКА
+        </h2>
+
+        <p class="project-text">
+            Курортний ресторан нового покоління.
+            Концепція поєднує кухню моря, пляжну атмосферу,
+            All Inclusive, A LA CARTE та формат справжньої
+            курортної свободи.
+        </p>
 
         <img
+            class="project-image"
             src="zatoka.jpg"
-            alt="Ресторан ЗАТОКА"
-            loading="lazy"
+            alt="ЗАТОКА ресторан"
         >
 
-        <div class="project-text">
+        <div class="project-buttons">
 
-            <h2>ЗАТОКА</h2>
-
-            <p>
-                Ресторан курортного формату, який переносить
-                атмосферу моря, пляжу та відпочинку в місто.
-            </p>
-
-            <p>
-                Курортна кухня, ALL INCLUSIVE, A LA CARTE,
-                музика, відпочинок та свобода курорту.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#contacts" class="btn">
-                    Інвестиції та партнерство
-                </a>
-
-            </div>
+            <a class="btn" href="#contacts">
+                Інвестиції та партнерство
+            </a>
 
         </div>
 
@@ -563,38 +576,34 @@ footer strong {
 </section>
 
 
-<!-- OLIVA -->
+<!-- ================= OLIVA ================= -->
 
-<section id="oliva">
+<section id="oliva" class="project-section">
 
-    <div class="project-detail">
+    <div class="project-inner">
+
+        <h2 class="project-title">
+            OLIVA EXTRA
+        </h2>
+
+        <p class="project-text">
+            Кухня сонця та моря.
+            Італійська кухня, морепродукти, паста,
+            антипасті, вина та атмосфера сонячного
+            узбережжя.
+        </p>
 
         <img
+            class="project-image"
             src="oliva-extra.jpg"
             alt="OLIVA EXTRA ресторан"
-            loading="lazy"
         >
 
-        <div class="project-text">
+        <div class="project-buttons">
 
-            <h2>OLIVA EXTRA</h2>
-
-            <p>
-                Кухня сонця та моря.
-            </p>
-
-            <p>
-                Італійська кухня, морепродукти, паста,
-                антипасті, вина та середземноморська атмосфера.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#contacts" class="btn">
-                    Інвестиції та партнерство
-                </a>
-
-            </div>
+            <a class="btn" href="#contacts">
+                Інвестиції та партнерство
+            </a>
 
         </div>
 
@@ -603,39 +612,34 @@ footer strong {
 </section>
 
 
-<!-- SHAMPUR -->
+<!-- ================= SHAMPUR ================= -->
 
-<section id="shampur">
+<section id="shampur" class="project-section">
 
-    <div class="project-detail">
+    <div class="project-inner">
+
+        <h2 class="project-title">
+            ШАМПУР HOUSE
+        </h2>
+
+        <p class="project-text">
+            Сучасний grill-ресторан.
+            М'ясо з вогню, шашлик, люля-кебаб,
+            страви на відкритому вогні та сильна
+            гастрономічна атмосфера.
+        </p>
 
         <img
+            class="project-image"
             src="shampur-house.jpg"
             alt="ШАМПУР HOUSE ресторан"
-            loading="lazy"
         >
 
-        <div class="project-text">
+        <div class="project-buttons">
 
-            <h2>ШАМПУР HOUSE</h2>
-
-            <p>
-                Сучасний гриль-ресторан, побудований навколо
-                культури м'яса з вогню.
-            </p>
-
-            <p>
-                Шашлик, люля-кебаб, м'ясо на грилі,
-                великі компанії та жива атмосфера.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#contacts" class="btn">
-                    Інвестиції та партнерство
-                </a>
-
-            </div>
+            <a class="btn" href="#contacts">
+                Інвестиції та партнерство
+            </a>
 
         </div>
 
@@ -644,38 +648,23 @@ footer strong {
 </section>
 
 
-<!-- INVESTMENTS -->
+<!-- ================= INVESTMENT ================= -->
 
-<section class="investments" id="investment">
+<section class="project-section investment">
 
-    <div class="investments-inner">
+    <div class="project-inner">
 
         <h2>
             Інвестиції та партнерство
         </h2>
 
         <p>
-            RESTEXTRAGROUP розвиває ресторанні проекти
-            з готовою концепцією, дизайном, кухнею
-            та бізнес-моделлю.
+            RESTEXTRAGROUP шукає інвесторів та партнерів
+            для запуску авторських ресторанних проєктів.
         </p>
 
-        <ul class="investment-list">
-
-            <li>Готові ресторанні концепції</li>
-
-            <li>Розробка дизайну та позиціонування</li>
-
-            <li>Формування меню та бізнес-моделі</li>
-
-            <li>Пошук інвесторів та партнерів</li>
-
-            <li>Можливість масштабування проектів</li>
-
-        </ul>
-
-        <a href="#contacts" class="btn btn-light">
-            Обговорити партнерство
+        <a class="btn" href="#contacts">
+            Зв'язатися з автором
         </a>
 
     </div>
@@ -683,40 +672,34 @@ footer strong {
 </section>
 
 
-<!-- CONTACTS -->
+<!-- ================= CONTACTS ================= -->
 
-<section class="contacts" id="contacts">
+<section id="contacts" class="project-section contacts">
 
-    <div class="contact-box">
+    <div class="project-inner">
 
         <h2>
             Контакти
         </h2>
 
-        <p>
-            Автор проектів
+        <p class="author">
+            Автор проєктів: <strong>Носов Олександр</strong>
         </p>
 
-        <h3>
-            Носов Олександр
-        </h3>
+        <p class="phone">
+            <a href="tel:+380677386190">
+                067 738 61 90
+            </a>
+        </p>
 
-        <a
-            class="phone"
-            href="tel:+380677386190"
-        >
-            067 738 61 90
-        </a>
 
         <div class="contact-buttons">
 
             <!-- TELEGRAM -->
 
             <a
-                class="btn"
-                href="https://t.me/+380677386190"
-                target="_blank"
-                rel="noopener"
+                class="contact-btn"
+                href="tg://resolve?phone=380677386190"
             >
                 Telegram
             </a>
@@ -725,7 +708,7 @@ footer strong {
             <!-- VIBER -->
 
             <a
-                class="btn"
+                class="contact-btn"
                 href="viber://chat?number=%2B380677386190"
             >
                 Viber
@@ -735,7 +718,7 @@ footer strong {
             <!-- PHONE -->
 
             <a
-                class="btn"
+                class="contact-btn"
                 href="tel:+380677386190"
             >
                 Зателефонувати
@@ -747,23 +730,22 @@ footer strong {
 
 </section>
 
-</main>
 
-
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
     <p>
         <strong>RESTEXTRAGROUP</strong>
-        — ресторанні проекти
+        — ресторанні проєкти
     </p>
 
     <p>
-        Інвестиції • Партнерство • Ресторанні проекти
+        Інвестиції • Партнерство • Ресторанний бізнес
     </p>
 
 </footer>
+
 
 </body>
 </html>
