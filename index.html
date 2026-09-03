@@ -1,461 +1,350 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RESTEXTRAGROUP — ресторанні концепції та інвестиції в Києві</title>
+<title>RESTEXTRAGROUP — ресторанні проєкти у Києві | ЗАТОКА, OLIVA EXTRA, ШАМПУР HOUSE</title>
 
-<meta name="description" content="RESTEXTRAGROUP — авторські ресторанні концепції для інвесторів у Києві. ЗАТОКА, OLIVA EXTRA, ШАМПУР HOUSE. Розробка, запуск і масштабування ресторанних проєктів.">
-<meta name="keywords" content="RESTEXTRAGROUP, ресторан Київ, ресторанні концепції, інвестиції в ресторан, ресторанний бізнес Київ, ЗАТОКА ресторан, OLIVA EXTRA, ШАМПУР HOUSE">
-<meta name="author" content="Олександр Носов">
+<meta name="description" content="RESTEXTRAGROUP — авторські ресторанні концепції для Києва. ЗАТОКА, OLIVA EXTRA та ШАМПУР HOUSE. Інвестиційні ресторанні проєкти з готовою концепцією.">
 
-<meta property="og:title" content="RESTEXTRAGROUP — ресторанні концепції та інвестиції">
-<meta property="og:description" content="Авторські ресторанні концепції. Практичний досвід. Перспектива масштабування.">
+<meta name="keywords" content="ресторани Київ, ресторанний бізнес Київ, ресторанні проєкти, інвестиції ресторан, ЗАТОКА ресторан, OLIVA EXTRA, ШАМПУР HOUSE, RESTEXTRAGROUP">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="RESTEXTRAGROUP">
+
+<link rel="canonical" href="https://restextragroup-dev.github.io/restextragroup-site/">
+
+<meta property="og:title" content="RESTEXTRAGROUP — ресторанні проєкти">
+<meta property="og:description" content="ЗАТОКА, OLIVA EXTRA та ШАМПУР HOUSE — готові ресторанні концепції для розвитку у Києві.">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="uk_UA">
+<meta property="og:url" content="https://restextragroup-dev.github.io/restextragroup-site/">
 
 <style>
-*{box-sizing:border-box}
 
-html{scroll-behavior:smooth}
-
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f3efe7;
-color:#222;
-line-height:1.6
+* {
+    box-sizing: border-box;
 }
 
-header{
-background:#242320;
-color:#fff;
-padding:70px 20px 90px;
-text-align:center
+body {
+    margin: 0;
+    background: #f3efe7;
+    color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
-font-size:42px;
-font-weight:800;
-letter-spacing:2px;
-margin-bottom:65px
+header {
+    background: #242320;
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
 }
 
-.hero{
-max-width:900px;
-margin:auto
+.logo {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
-.hero h1{
-font-size:48px;
-line-height:1.15;
-margin:0 0 30px;
-font-weight:800
+header p {
+    margin: 8px 0 0;
+    color: #d8d2c5;
+    font-size: 16px;
 }
 
-.hero p{
-font-size:23px;
-margin:10px 0;
-color:#eee
+.hero {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
 }
 
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:18px 45px;
-background:#c7a55e;
-color:#fff;
-text-decoration:none;
-font-size:20px;
-font-weight:700;
-border-radius:10px
+.hero h1 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
-.btn:hover{opacity:.85}
-
-section{
-max-width:1100px;
-margin:auto;
-padding:70px 20px
+.hero p {
+    font-size: 21px;
+    line-height: 1.6;
+    color: #555;
 }
 
-section h2{
-font-size:42px;
-line-height:1.2;
-margin:0 0 35px
+.projects {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
 }
 
-.intro{
-font-size:22px;
-max-width:850px
+.section-title {
+    font-size: 36px;
+    margin: 20px 0 30px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:28px
+.card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 45px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
-.card{
-background:#fff;
-border-radius:22px;
-overflow:hidden;
-box-shadow:0 8px 30px rgba(0,0,0,.08)
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
-.card img{
-width:100%;
-height:300px;
-object-fit:cover;
-display:block
+.card-content {
+    padding: 35px;
 }
 
-.card-content{
-padding:30px
+.card h2 {
+    font-size: 34px;
+    margin: 0 0 20px;
 }
 
-.card h3{
-font-size:30px;
-margin:0 0 15px
+.card p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
 }
 
-.card p{
-font-size:18px;
-margin:0
+.features {
+    margin-top: 25px;
+    padding-left: 20px;
 }
 
-.dark{
-background:#242320;
-color:#fff;
-max-width:none
+.features li {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.dark-inner{
-max-width:1100px;
-margin:auto;
-padding:70px 20px
+.invest {
+    background: #242320;
+    color: white;
+    border-radius: 24px;
+    padding: 40px 35px;
+    margin-top: 30px;
 }
 
-.invest{
-background:#c7a55e;
-color:#fff;
-border-radius:20px;
-padding:40px;
-margin-top:35px
+.invest h2 {
+    font-size: 32px;
+    margin-top: 0;
 }
 
-.invest h3{
-font-size:32px;
-margin-top:0
+.invest p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #ddd;
 }
 
-.invest p{
-font-size:20px
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ded7ca;
 }
 
-.author{
-background:#fff
+.contact h2 {
+    font-size: 32px;
 }
 
-.author-box{
-font-size:20px;
-max-width:800px
+.contact p {
+    font-size: 20px;
+    line-height: 1.6;
 }
 
-.contacts{
-font-size:21px;
-margin-top:25px
+footer {
+    background: #242320;
+    color: #aaa;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
 }
 
-.contacts a{
-color:inherit;
-font-weight:700
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
 }
 
-footer{
-background:#242320;
-color:#fff;
-text-align:center;
-padding:45px 20px;
-font-size:16px
-}
-
-.small{
-opacity:.75;
-font-size:15px
-}
-
-@media(max-width:800px){
-
-.logo{
-font-size:31px;
-margin-bottom:45px
-}
-
-.hero h1{
-font-size:37px
-}
-
-.hero p{
-font-size:19px
-}
-
-section h2{
-font-size:34px
-}
-
-.grid{
-grid-template-columns:1fr
-}
-
-.card img{
-height:260px
-}
-
-.card h3{
-font-size:27px
-}
-
-section{
-padding:55px 18px
-}
-
-.dark-inner{
-padding:55px 18px
-}
-
-.btn{
-font-size:18px;
-padding:16px 30px
-}
-}
 </style>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"Organization",
-"name":"RESTEXTRAGROUP",
-"description":"Авторські ресторанні концепції та інвестиційні проєкти",
-"url":"https://restextragroup-dev.github.io/restextragroup-site/",
-"founder":{
-"@type":"Person",
-"name":"Олександр Носов"
-},
-"areaServed":"Kyiv, Ukraine"
-}
-</script>
-
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">RESTEXTRAGROUP</div>
-
-<div class="hero">
-
-<h1>Інвестиції у<br>ресторанний успіх</h1>
-
-<p>Авторські ресторанні концепції · Практичний досвід · Перспектива масштабування</p>
-
-<a class="btn" href="#invest">Стати інвестором</a>
-
-</div>
-
+    <div class="logo">RESTEXTRAGROUP</div>
+    <p>Ресторанні концепції та інвестиційні проєкти</p>
 </header>
 
+<section class="hero">
 
-<section>
+    <h1>Ресторанні проєкти RESTEXTRAGROUP</h1>
 
-<h2>Ресторанна група<br>нового покоління</h2>
+    <p>
+        Авторські ресторанні концепції, створені для розвитку
+        сучасного ресторанного бізнесу в Києві.
+    </p>
 
-<p class="intro">
-RESTEXTRAGROUP створює авторські ресторанні концепції,
-готові до запуску, інвестування та подальшого масштабування.
-</p>
+</section>
 
-<p class="intro">
-Ми поєднуємо концепцію, кухню, атмосферу, бренд та бізнес-модель
-в один зрозумілий ресторанний продукт.
-</p>
+<section class="projects">
+
+    <h2 class="section-title">Наші концепції</h2>
+
+    <!-- ЗАТОКА -->
+
+    <article class="card">
+
+        <img src="zatoka.jpg"
+             alt="ЗАТОКА — курортний ресторанний проєкт у Києві">
+
+        <div class="card-content">
+
+            <h2>ЗАТОКА</h2>
+
+            <p>
+                Курортна атмосфера, свобода відпочинку та концепція,
+                створена для великого потоку гостей.
+            </p>
+
+            <ul class="features">
+                <li>Курортна кухня</li>
+                <li>ALL INCLUSIVE</li>
+                <li>A LA CARTE</li>
+                <li>CORK FREE</li>
+                <li>Висока оборотність та великий потік гостей</li>
+            </ul>
+
+        </div>
+
+    </article>
+
+
+    <!-- OLIVA EXTRA -->
+
+    <article class="card">
+
+        <img src="oliva-extra.jpg"
+             alt="OLIVA EXTRA — середземноморський ресторан">
+
+        <div class="card-content">
+
+            <h2>OLIVA EXTRA</h2>
+
+            <p>
+                Середземноморська кухня сонця та моря
+                з виразним авторським стилем.
+            </p>
+
+            <ul class="features">
+                <li>Італійська та середземноморська кухня</li>
+                <li>Паста, риба, морепродукти та м'ясо</li>
+                <li>Винна культура</li>
+                <li>Елегантний середземноморський дизайн</li>
+                <li>Преміальний ресторанний формат</li>
+            </ul>
+
+        </div>
+
+    </article>
+
+
+    <!-- ШАМПУР HOUSE -->
+
+    <article class="card">
+
+        <img src="shampur-house.jpg"
+             alt="ШАМПУР HOUSE — ресторан м'яса з вогню">
+
+        <div class="card-content">
+
+            <h2>ШАМПУР HOUSE</h2>
+
+            <p>
+                Сучасна концепція кухні на вогні,
+                де головний акцент — м'ясо, шампури та гриль.
+            </p>
+
+            <ul class="features">
+                <li>Шашлик</li>
+                <li>Люля-кебаб</li>
+                <li>Стейки</li>
+                <li>М'ясо з вогню</li>
+                <li>Сучасний формат гриль-ресторану</li>
+            </ul>
+
+        </div>
+
+    </article>
+
+
+    <div class="invest">
+
+        <h2>Інвестиційна пропозиція</h2>
+
+        <p>
+            RESTEXTRAGROUP розвиває ресторанні концепції
+            та шукає інвесторів і партнерів для запуску
+            нових закладів у Києві.
+        </p>
+
+        <p>
+            Проєкти мають готову концепцію, позиціонування,
+            візуальний стиль та бізнес-модель.
+        </p>
+
+    </div>
 
 </section>
 
 
-<section>
+<section class="contact">
 
-<h2>Авторські ресторанні концепції</h2>
+    <h2>Співпраця та інвестиції</h2>
 
-<div class="grid">
+    <p>
+        Автор проєктів<br>
+        <strong>Носов Олександр</strong>
+    </p>
 
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85"
-alt="ЗАТОКА — ресторанний проєкт">
-
-<div class="card-content">
-
-<h3>ЗАТОКА</h3>
-
-<p>
-Курортна атмосфера, свобода відпочинку та концепція,
-створена для великого потоку гостей.
-</p>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85"
-alt="OLIVA EXTRA — середземноморський ресторан">
-
-<div class="card-content">
-
-<h3>OLIVA EXTRA</h3>
-
-<p>
-Середземноморська кухня сонця та моря
-з виразним авторським стилем.
-</p>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85"
-alt="ШАМПУР HOUSE — ресторан м'яса та вогню">
-
-<div class="card-content">
-
-<h3>ШАМПУР HOUSE</h3>
-
-<p>
-Сучасна концепція кухні на вогні,
-м'яса, шампурів та яскравої ресторанної атмосфери.
-</p>
-
-</div>
-</div>
-
-
-</div>
-
-</section>
-
-
-<div class="dark" id="invest">
-
-<div class="dark-inner">
-
-<h2>Інвестиції</h2>
-
-<p style="font-size:22px">
-Ми шукаємо інвесторів та партнерів для запуску
-і масштабування ресторанних проєктів RESTEXTRAGROUP.
-</p>
-
-<div class="invest">
-
-<h3>Інвестиційна модель</h3>
-
-<p>
-Площа потенційного ресторанного проєкту:
-<strong>300–500+ м²</strong>.
-</p>
-
-<p>
-Орієнтовні інвестиції у створення:
-<strong>$1 200–$2 000 за 1 м²</strong>
-залежно від формату та рівня реалізації.
-</p>
-
-<p>
-Фінальна структура інвестицій,
-частка партнера та фінансова модель
-визначаються індивідуально для кожного проєкту.
-</p>
-
-<a class="btn" href="mailto:info@restextragroup.com">
-Запросити презентацію
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-
-<section class="author">
-
-<h2>Про автора</h2>
-
-<div class="author-box">
-
-<p>
-<strong>Олександр Носов</strong> — автор ресторанних концепцій
-RESTEXTRAGROUP.
-</p>
-
-<p>
-Розробка концепції, позиціонування, бренд, кухня,
-формат ресторану та підготовка проєкту до інвестування.
-</p>
-
-<div class="contacts">
-
-<p>
-📞 <a href="tel:+380677386190">+38 067 738 61 90</a>
-</p>
-
-<p>
-✉️ <a href="mailto:info@restextragroup.com">info@restextragroup.com</a>
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Партнерство</h2>
-
-<p class="intro">
-Ми відкриті до співпраці з приватними інвесторами,
-партнерами та власниками комерційних приміщень.
-</p>
-
-<a class="btn" href="mailto:info@restextragroup.com">
-Обговорити проєкт
-</a>
+    <p>
+        Телефон: <strong>067 738 61 90</strong>
+    </p>
 
 </section>
 
 
 <footer>
 
-<strong>RESTEXTRAGROUP</strong>
-
-<br>
-
-Авторські ресторанні концепції · Інвестиції · Масштабування
-
-<br><br>
-
-<span class="small">
-© 2026 RESTEXTRAGROUP. Усі права захищені.
-</span>
+    © RESTEXTRAGROUP — ресторанні концепції
 
 </footer>
 
