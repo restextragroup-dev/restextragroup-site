@@ -6,371 +6,395 @@
 
 <title>RESTEXTRAGROUP — ресторанні проекти</title>
 
-<meta name="description"
-content="RESTEXTRAGROUP — ресторанні проекти ЗАТОКА, OLIVA EXTRA та ШАМПУР HOUSE. Автор проектів Носов Олександр.">
+<meta name="description" content="RESTEXTRAGROUP — ресторанні проекти нового покоління. ЗАТОКА, OLIVA EXTRA, ШАМПУР HOUSE. Інвестиції та партнерство.">
 
 <style>
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f7f4ef;
-    color:#222;
-    line-height:1.6;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f2ec;
+    color: #202820;
+    line-height: 1.6;
 }
 
-header{
-    background:#202820;
-    color:white;
-    padding:22px 20px;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 12px rgba(0,0,0,.2);
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.header-inner{
-    max-width:1150px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
+/* HEADER */
+
+header {
+    background: #1d281f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.18);
 }
 
-.logo{
-    font-size:24px;
-    font-weight:700;
-    letter-spacing:1px;
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
 }
 
-nav{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-    justify-content:flex-end;
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:9px 13px;
-    border-radius:7px;
-    transition:.2s;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
 }
 
-nav a:hover{
-    background:#ffffff22;
+nav a {
+    font-size: 16px;
+    color: white;
+    transition: 0.2s;
 }
 
-.hero{
-    min-height:430px;
+nav a:hover {
+    color: #d8c38a;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 560px;
     background:
-        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        linear-gradient(rgba(20,28,22,0.55), rgba(20,28,22,0.65)),
         url("zatoka.jpg") center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding:50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
 }
 
-.hero-content{
-    max-width:850px;
+.hero-content {
+    max-width: 900px;
 }
 
-.hero h1{
-    font-size:clamp(38px,7vw,72px);
-    margin-bottom:15px;
-    letter-spacing:2px;
+.hero h1 {
+    font-size: clamp(42px, 8vw, 82px);
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
 }
 
-.hero p{
-    font-size:clamp(18px,3vw,25px);
+.hero p {
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: 35px;
 }
 
-.container{
-    max-width:1150px;
-    margin:auto;
-    padding:65px 20px;
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.section-title{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:15px;
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    background: #1d281f;
+    color: white;
+    font-weight: 700;
+    border: 2px solid #1d281f;
+    transition: 0.25s;
 }
 
-.section-subtitle{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 45px;
-    color:#666;
-    font-size:18px;
+.btn:hover {
+    background: #344637;
+    transform: translateY(-2px);
 }
 
-.projects{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:28px;
+.btn-light {
+    background: white;
+    color: #1d281f;
+    border-color: white;
 }
 
-.card{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 22px rgba(0,0,0,.12);
-    transition:.25s;
+/* SECTIONS */
+
+section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 20px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 28px rgba(0,0,0,.17);
+.section-title {
+    text-align: center;
+    font-size: clamp(32px, 5vw, 52px);
+    margin-bottom: 45px;
 }
 
-.card img{
-    width:100%;
-    height:245px;
-    display:block;
-    object-fit:cover;
+/* PROJECTS */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
 }
 
-.card-content{
-    padding:25px;
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
 }
 
-.card h2{
-    font-size:28px;
-    margin-bottom:12px;
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
 }
 
-.card p{
-    color:#666;
-    margin-bottom:22px;
+.card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.btn{
-    display:inline-block;
-    background:#252d25;
-    color:white;
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.2s;
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
 }
 
-.btn:hover{
-    background:#465446;
+.card p {
+    color: #555;
+    margin-bottom: 22px;
 }
 
-.project{
-    padding:70px 0;
-    border-top:1px solid #ddd;
+.card .btn {
+    margin-top: auto;
+    text-align: center;
 }
 
-.project-inner{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
+/* PROJECT DETAILS */
+
+.project-detail {
+    background: white;
+    max-width: 1150px;
+    margin: 35px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-.project:nth-child(even) .project-inner{
-    direction:rtl;
+.project-detail img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    display: block;
 }
 
-.project:nth-child(even) .project-text{
-    direction:ltr;
+.project-text {
+    padding: 35px;
 }
 
-.project img{
-    width:100%;
-    height:380px;
-    object-fit:cover;
-    border-radius:15px;
-    box-shadow:0 7px 25px rgba(0,0,0,.15);
+.project-text h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
-.project h2{
-    font-size:42px;
-    margin-bottom:18px;
+.project-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-.project h3{
-    font-size:21px;
-    margin-bottom:15px;
+/* INVESTMENTS */
+
+.investments {
+    background: #1d281f;
+    color: white;
+    max-width: none;
 }
 
-.project p{
-    color:#555;
-    margin-bottom:20px;
-    font-size:17px;
+.investments-inner {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
-.about{
-    background:#ebe6dc;
+.investments h2 {
+    font-size: clamp(35px, 6vw, 55px);
+    margin-bottom: 20px;
 }
 
-.about-box{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
+.investments p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.about-box h2{
-    font-size:40px;
-    margin-bottom:20px;
+.investment-list {
+    text-align: left;
+    max-width: 650px;
+    margin: 30px auto;
 }
 
-.about-box p{
-    font-size:18px;
-    color:#555;
-    margin-bottom:15px;
+.investment-list li {
+    margin: 12px 0;
+    font-size: 18px;
 }
 
-.contact{
-    background:#202820;
-    color:white;
-    text-align:center;
+/* CONTACTS */
+
+.contacts {
+    text-align: center;
 }
 
-.contact h2{
-    font-size:38px;
-    margin-bottom:15px;
+.contact-box {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 40px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-.contact p{
-    font-size:20px;
-    margin:8px 0;
+.contact-box h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-.phone{
-    display:inline-block;
-    color:white;
-    font-size:28px;
-    font-weight:bold;
-    text-decoration:none;
-    margin-top:10px;
+.phone {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 30px;
 }
 
-footer{
-    background:#151a15;
-    color:#aaa;
-    text-align:center;
-    padding:25px 15px;
-    font-size:14px;
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-@media(max-width:850px){
+.contact-buttons a {
+    min-width: 145px;
+}
 
-    .header-inner{
-        flex-direction:column;
+/* FOOTER */
+
+footer {
+    background: #111711;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .header-inner {
+        flex-direction: column;
+        padding: 18px 12px;
     }
 
-    nav{
-        justify-content:center;
+    nav {
+        gap: 12px 18px;
     }
 
-    .projects{
-        grid-template-columns:1fr;
+    nav a {
+        font-size: 15px;
     }
 
-    .project-inner{
-        grid-template-columns:1fr;
-        gap:25px;
+    .hero {
+        min-height: 520px;
     }
 
-    .project:nth-child(even) .project-inner{
-        direction:ltr;
+    .projects {
+        grid-template-columns: 1fr;
     }
 
-    .project img{
-        height:280px;
+    .card img {
+        height: 250px;
     }
 
-    .project h2{
-        font-size:34px;
-    }
-}
-
-@media(max-width:500px){
-
-    header{
-        padding:15px 12px;
+    section {
+        padding: 55px 15px;
     }
 
-    .logo{
-        font-size:20px;
+    .project-text {
+        padding: 25px 20px;
     }
 
-    nav a{
-        font-size:14px;
-        padding:7px 9px;
+    .project-text h2 {
+        font-size: 32px;
     }
 
-    .hero{
-        min-height:380px;
+    .contact-buttons {
+        flex-direction: column;
     }
 
-    .container{
-        padding:45px 15px;
-    }
-
-    .section-title{
-        font-size:31px;
-    }
-
-    .card img{
-        height:220px;
-    }
-
-    .project{
-        padding:45px 0;
-    }
-
-    .project img{
-        height:230px;
-    }
-
-    .phone{
-        font-size:23px;
+    .contact-buttons a {
+        width: 100%;
     }
 }
-
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
     <div class="header-inner">
 
-        <div class="logo">
+        <a href="#top" class="logo">
             RESTEXTRAGROUP
-        </div>
+        </a>
 
         <nav>
             <a href="#projects">Проекти</a>
             <a href="#zatoka">ЗАТОКА</a>
             <a href="#oliva">OLIVA EXTRA</a>
             <a href="#shampur">ШАМПУР HOUSE</a>
-            <a href="#contact">Контакти</a>
+            <a href="#contacts">Контакти</a>
         </nav>
 
     </div>
 </header>
 
+
+<!-- HERO -->
+
+<main id="top">
 
 <section class="hero">
 
@@ -382,25 +406,35 @@ footer{
             Ресторанні проекти нового покоління
         </p>
 
+        <div class="buttons">
+
+            <a href="#projects" class="btn">
+                Наші проекти
+            </a>
+
+            <a href="#contacts" class="btn btn-light">
+                Зв'язатися
+            </a>
+
+        </div>
+
     </div>
 
 </section>
 
 
-<section class="container" id="projects">
+<!-- PROJECTS -->
+
+<section id="projects">
 
     <h2 class="section-title">
         Ресторанні проекти
     </h2>
 
-    <p class="section-subtitle">
-        Авторські концепції ресторанів для створення сильних,
-        впізнаваних та прибуткових ресторанних брендів.
-    </p>
-
-
     <div class="projects">
 
+
+        <!-- ZATOКА -->
 
         <article class="card">
 
@@ -412,14 +446,14 @@ footer{
 
             <div class="card-content">
 
-                <h2>ЗАТОКА</h2>
+                <h3>ЗАТОКА</h3>
 
                 <p>
-                    Курортна кухня та атмосфера свободи.
-                    ALL INCLUSIVE, A LA CARTE та CORK FREE.
+                    Курортна кухня, атмосфера моря та сонця,
+                    формат ресторану з концепцією ALL INCLUSIVE.
                 </p>
 
-                <a class="btn" href="#zatoka">
+                <a href="#zatoka" class="btn">
                     Детальніше
                 </a>
 
@@ -427,6 +461,8 @@ footer{
 
         </article>
 
+
+        <!-- OLIVA EXTRA -->
 
         <article class="card">
 
@@ -438,14 +474,14 @@ footer{
 
             <div class="card-content">
 
-                <h2>OLIVA EXTRA</h2>
+                <h3>OLIVA EXTRA</h3>
 
                 <p>
-                    Елегантний ресторан із кухнею сонця та моря
-                    і середземноморською атмосферою.
+                    Елегантний ресторан із кухнею сонця та моря:
+                    паста, антипасті, морепродукти та вино.
                 </p>
 
-                <a class="btn" href="#oliva">
+                <a href="#oliva" class="btn">
                     Детальніше
                 </a>
 
@@ -453,6 +489,8 @@ footer{
 
         </article>
 
+
+        <!-- SHAMPUR HOUSE -->
 
         <article class="card">
 
@@ -464,14 +502,14 @@ footer{
 
             <div class="card-content">
 
-                <h2>ШАМПУР HOUSE</h2>
+                <h3>ШАМПУР HOUSE</h3>
 
                 <p>
                     М'ясо з вогню, шашлик, люля-кебаб
                     та сучасна атмосфера гриль-ресторану.
                 </p>
 
-                <a class="btn" href="#shampur">
+                <a href="#shampur" class="btn">
                     Детальніше
                 </a>
 
@@ -479,15 +517,16 @@ footer{
 
         </article>
 
-
     </div>
 
 </section>
 
 
-<section class="container project" id="zatoka">
+<!-- ZATOКА -->
 
-    <div class="project-inner">
+<section id="zatoka">
+
+    <div class="project-detail">
 
         <img
             src="zatoka.jpg"
@@ -499,23 +538,23 @@ footer{
 
             <h2>ЗАТОКА</h2>
 
-            <h3>
-                Курортна кухня. Курортна свобода.
-            </h3>
-
             <p>
-                ЗАТОКА — ресторанний формат, який переносить
-                атмосферу українського курорту в сучасне міське середовище.
+                Ресторан курортного формату, який переносить
+                атмосферу моря, пляжу та відпочинку в місто.
             </p>
 
             <p>
-                Концепція поєднує курортну кухню, морепродукти,
-                гриль, піцу, пасту та атмосферу відпочинку.
+                Курортна кухня, ALL INCLUSIVE, A LA CARTE,
+                музика, відпочинок та свобода курорту.
             </p>
 
-            <a class="btn" href="#contact">
-                Інвестиції та партнерство
-            </a>
+            <div class="buttons">
+
+                <a href="#contacts" class="btn">
+                    Інвестиції та партнерство
+                </a>
+
+            </div>
 
         </div>
 
@@ -524,13 +563,15 @@ footer{
 </section>
 
 
-<section class="container project" id="oliva">
+<!-- OLIVA -->
 
-    <div class="project-inner">
+<section id="oliva">
+
+    <div class="project-detail">
 
         <img
             src="oliva-extra.jpg"
-            alt="Ресторан OLIVA EXTRA"
+            alt="OLIVA EXTRA ресторан"
             loading="lazy"
         >
 
@@ -538,23 +579,22 @@ footer{
 
             <h2>OLIVA EXTRA</h2>
 
-            <h3>
-                Кухня сонця та моря
-            </h3>
-
             <p>
-                OLIVA EXTRA — елегантний ресторан
-                із середземноморським характером.
+                Кухня сонця та моря.
             </p>
 
             <p>
                 Італійська кухня, морепродукти, паста,
-                антипасті, вина та атмосфера сонячного узбережжя.
+                антипасті, вина та середземноморська атмосфера.
             </p>
 
-            <a class="btn" href="#contact">
-                Інвестиції та партнерство
-            </a>
+            <div class="buttons">
+
+                <a href="#contacts" class="btn">
+                    Інвестиції та партнерство
+                </a>
+
+            </div>
 
         </div>
 
@@ -563,13 +603,15 @@ footer{
 </section>
 
 
-<section class="container project" id="shampur">
+<!-- SHAMPUR -->
 
-    <div class="project-inner">
+<section id="shampur">
+
+    <div class="project-detail">
 
         <img
             src="shampur-house.jpg"
-            alt="ШАМПУР HOUSE"
+            alt="ШАМПУР HOUSE ресторан"
             loading="lazy"
         >
 
@@ -577,25 +619,23 @@ footer{
 
             <h2>ШАМПУР HOUSE</h2>
 
-            <h3>
-                М'ясо з вогню
-            </h3>
-
             <p>
-                Сучасний гриль-ресторан,
-                побудований навколо відкритого вогню,
-                шашлику та м'ясних страв.
+                Сучасний гриль-ресторан, побудований навколо
+                культури м'яса з вогню.
             </p>
 
             <p>
-                Сильний гастрономічний характер,
-                зрозумілий продукт та атмосфера,
-                яка створює власну аудиторію.
+                Шашлик, люля-кебаб, м'ясо на грилі,
+                великі компанії та жива атмосфера.
             </p>
 
-            <a class="btn" href="#contact">
-                Інвестиції та партнерство
-            </a>
+            <div class="buttons">
+
+                <a href="#contacts" class="btn">
+                    Інвестиції та партнерство
+                </a>
+
+            </div>
 
         </div>
 
@@ -604,43 +644,62 @@ footer{
 </section>
 
 
-<section class="about">
+<!-- INVESTMENTS -->
 
-    <div class="container">
+<section class="investments" id="investment">
 
-        <div class="about-box">
-
-            <h2>RESTEXTRAGROUP</h2>
-
-            <p>
-                Ми створюємо ресторанні концепції,
-                які можуть перетворюватися на сильні бренди
-                та масштабуватися в ресторанні мережі.
-            </p>
-
-            <p>
-                Кожен проект має власну філософію,
-                концепцію, дизайн, кухню та бізнес-модель.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="contact" id="contact">
-
-    <div class="container">
+    <div class="investments-inner">
 
         <h2>
-            Автор проектів
+            Інвестиції та партнерство
         </h2>
 
         <p>
-            Носов Олександр
+            RESTEXTRAGROUP розвиває ресторанні проекти
+            з готовою концепцією, дизайном, кухнею
+            та бізнес-моделлю.
         </p>
+
+        <ul class="investment-list">
+
+            <li>Готові ресторанні концепції</li>
+
+            <li>Розробка дизайну та позиціонування</li>
+
+            <li>Формування меню та бізнес-моделі</li>
+
+            <li>Пошук інвесторів та партнерів</li>
+
+            <li>Можливість масштабування проектів</li>
+
+        </ul>
+
+        <a href="#contacts" class="btn btn-light">
+            Обговорити партнерство
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACTS -->
+
+<section class="contacts" id="contacts">
+
+    <div class="contact-box">
+
+        <h2>
+            Контакти
+        </h2>
+
+        <p>
+            Автор проектів
+        </p>
+
+        <h3>
+            Носов Олександр
+        </h3>
 
         <a
             class="phone"
@@ -649,21 +708,62 @@ footer{
             067 738 61 90
         </a>
 
-        <p style="margin-top:25px;">
-            Інвестиції • Партнерство • Ресторанні проекти
-        </p>
+        <div class="contact-buttons">
+
+            <!-- TELEGRAM -->
+
+            <a
+                class="btn"
+                href="https://t.me/+380677386190"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+
+            <!-- VIBER -->
+
+            <a
+                class="btn"
+                href="viber://chat?number=%2B380677386190"
+            >
+                Viber
+            </a>
+
+
+            <!-- PHONE -->
+
+            <a
+                class="btn"
+                href="tel:+380677386190"
+            >
+                Зателефонувати
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
+</main>
+
+
+<!-- FOOTER -->
 
 <footer>
 
-    RESTEXTRAGROUP — ресторанні проекти
+    <p>
+        <strong>RESTEXTRAGROUP</strong>
+        — ресторанні проекти
+    </p>
+
+    <p>
+        Інвестиції • Партнерство • Ресторанні проекти
+    </p>
 
 </footer>
-
 
 </body>
 </html>
