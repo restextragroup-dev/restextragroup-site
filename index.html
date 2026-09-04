@@ -2,818 +2,448 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
+<title>RESTEXTRAGROUP — ресторанні проекти</title>
 
-<meta name="description"
-      content="RESTEXTRAGROUP — авторські ресторанні проєкти, інвестиції та партнерство.">
-
-<meta name="theme-color" content="#242b24">
-
-<title>RESTEXTRAGROUP — ресторанні проєкти</title>
+<meta name="description" content="RESTEXTRAGROUP — авторські ресторанні проекти, інвестиції та партнерство.">
 
 <style>
-
-/* =========================
-   ОСНОВНІ НАЛАШТУВАННЯ
-========================= */
-
-* {
-    box-sizing: border-box;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #f5f1e8;
-    color: #292b27;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f1e8;
+    color:#242b25;
+    overflow-x:hidden;
 }
 
-img {
-    max-width: 100%;
+img{
+    display:block;
+    max-width:100%;
 }
 
-a {
-    text-decoration: none;
+a{
+    text-decoration:none;
 }
 
+/* HEADER */
 
-/* =========================
-   ШАПКА
-========================= */
-
-header {
-    background: #242b24;
-    color: #ffffff;
-    width: 100%;
-    overflow: hidden;
+header{
+    background:#242b25;
+    color:white;
+    width:100%;
+    padding:24px 16px 20px;
+    text-align:center;
+    border-bottom:4px solid #8b963f;
 }
 
-.header-inner {
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 26px 24px 0;
+.logo{
+    display:block;
+    width:100%;
+    font-family:Georgia,serif;
+    font-size:clamp(28px,7vw,58px);
+    font-weight:bold;
+    letter-spacing:2px;
+    line-height:1.05;
+    white-space:nowrap;
 }
 
-
-/* ЛОГО */
-
-.logo {
-    text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: bold;
-    font-size: clamp(26px, 5vw, 52px);
-    letter-spacing: clamp(1px, 0.4vw, 4px);
-    line-height: 1.1;
-    white-space: normal;
-    overflow-wrap: anywhere;
+.logo span{
+    color:#a7b95a;
 }
 
-
-/* Кольори в логотипі */
-
-.logo .olive {
-    color: #a6b85c;
+.subtitle{
+    margin-top:10px;
+    font-size:14px;
+    color:#ddd;
 }
 
-.logo .blue {
-    color: #4c9caf;
+nav{
+    margin-top:22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px 22px;
 }
 
-.logo .cherry {
-    color: #9a2944;
+nav a{
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
 }
 
-
-/* =========================
-   НАВІГАЦІЯ
-========================= */
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px 24px;
-    padding: 28px 0 22px;
+nav a:hover{
+    color:#b7c66a;
 }
 
-nav a {
-    color: #ffffff;
-    font-size: 17px;
-    line-height: 1.3;
-    padding: 7px 3px;
-    transition: 0.25s;
-}
+/* HERO */
 
-nav a:hover {
-    color: #a6b85c;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    position: relative;
-    min-height: 620px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+.hero{
+    min-height:520px;
     background:
-        linear-gradient(
-            rgba(20,25,20,0.58),
-            rgba(20,25,20,0.68)
-        ),
-        url("oliva-extra.jpg") center center / cover no-repeat;
+        linear-gradient(rgba(20,25,21,.62),rgba(20,25,21,.72)),
+        url("hero.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:70px 18px;
 }
 
-.hero-content {
-    width: 100%;
-    max-width: 900px;
-    padding: 70px 24px;
+.hero-inner{
+    width:100%;
+    max-width:850px;
 }
 
-.hero h1 {
-    margin: 0 0 24px;
-
-    color: #ffffff;
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(36px, 7vw, 72px);
-    line-height: 1.05;
-
-    overflow-wrap: anywhere;
+.hero h1{
+    color:#fff;
+    font-family:Georgia,serif;
+    font-size:clamp(36px,9vw,78px);
+    line-height:1.05;
+    overflow-wrap:anywhere;
 }
 
-.hero h1 span {
-    color: #a6b85c;
+.hero h1 span{
+    color:#aebd5d;
 }
 
-.hero-subtitle {
-    margin: 0 auto 20px;
-
-    color: #ffffff;
-
-    font-size: clamp(21px, 3vw, 30px);
-    line-height: 1.35;
-    font-weight: 600;
+.hero h2{
+    color:#fff;
+    margin-top:22px;
+    font-size:clamp(20px,4vw,30px);
+    font-weight:400;
 }
 
-.hero-text {
-    max-width: 760px;
-    margin: 0 auto 35px;
-
-    color: #f4f4f4;
-
-    font-size: clamp(16px, 2vw, 20px);
-    line-height: 1.6;
+.hero p{
+    color:#eee;
+    font-size:18px;
+    line-height:1.6;
+    margin:22px auto 30px;
+    max-width:720px;
 }
 
-
-/* =========================
-   КНОПКИ
-========================= */
-
-.btn {
-    display: inline-block;
-
-    background: #9a2944;
-    color: #ffffff;
-
-    padding: 16px 28px;
-
-    border-radius: 7px;
-
-    font-size: 18px;
-    font-weight: bold;
-
-    transition: 0.25s;
-
-    border: 2px solid #9a2944;
+.btn{
+    display:inline-block;
+    background:#922b46;
+    color:#fff;
+    padding:15px 28px;
+    border-radius:7px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.2s;
 }
 
-.btn:hover {
-    background: #ffffff;
-    color: #9a2944;
+.btn:hover{
+    background:#7b2139;
+    transform:translateY(-2px);
 }
 
+/* GENERAL */
 
-/* =========================
-   СЕКЦІЇ
-========================= */
-
-.section {
-    width: 100%;
-    max-width: 1180px;
-
-    margin: 0 auto;
-
-    padding: 75px 24px;
+section{
+    width:100%;
+    padding:65px 16px;
 }
 
-.section-title {
-    margin: 0 0 18px;
-
-    text-align: center;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(32px, 5vw, 52px);
-    line-height: 1.15;
-
-    color: #242b24;
+.container{
+    width:100%;
+    max-width:1150px;
+    margin:0 auto;
 }
 
-.section-intro {
-    max-width: 780px;
-
-    margin: 0 auto 50px;
-
-    text-align: center;
-
-    font-size: 18px;
-    line-height: 1.7;
-
-    color: #555;
+.section-title{
+    text-align:center;
+    font-family:Georgia,serif;
+    font-size:clamp(30px,6vw,48px);
+    margin-bottom:14px;
+    color:#242b25;
 }
 
-
-/* =========================
-   ПРОЕКТИ
-========================= */
-
-.projects {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    gap: 28px;
+.section-text{
+    max-width:760px;
+    margin:0 auto 38px;
+    text-align:center;
+    color:#555;
+    font-size:17px;
+    line-height:1.65;
 }
 
-.project {
-    min-width: 0;
+/* PROJECTS */
 
-    background: #ffffff;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 8px 30px rgba(0,0,0,0.10);
-
-    transition: transform 0.25s,
-                box-shadow 0.25s;
+.projects{
+    background:#f5f1e8;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 14px 35px rgba(0,0,0,0.15);
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
 }
 
-
-/* ФОТО ПРОЕКТУ */
-
-.project-image-wrap {
-    width: 100%;
-    height: 270px;
-    overflow: hidden;
-    background: #ddd;
+.project{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 28px rgba(0,0,0,.12);
 }
 
-.project-image {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.4s;
+.project-image{
+    width:100%;
+    height:300px;
+    object-fit:cover;
 }
 
-.project:hover .project-image {
-    transform: scale(1.03);
+.project-content{
+    padding:25px;
 }
 
-
-/* ТЕКСТ */
-
-.project-body {
-    padding: 28px;
+.project h3{
+    font-family:Georgia,serif;
+    font-size:29px;
+    margin-bottom:10px;
+    color:#242b25;
 }
 
-.project-title {
-    margin: 0 0 12px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 30px;
-    line-height: 1.15;
-
-    color: #242b24;
+.project h3 span{
+    color:#8c963e;
 }
 
-.project:nth-child(1) .project-title {
-    color: #65752d;
+.project p{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
 }
 
-.project:nth-child(2) .project-title {
-    color: #28798c;
+.project .btn{
+    width:100%;
+    text-align:center;
 }
 
-.project:nth-child(3) .project-title {
-    color: #8e263e;
+/* INVEST */
+
+.invest{
+    background:#242b25;
+    color:#fff;
 }
 
-.project-text {
-    margin: 0 0 24px;
-
-    font-size: 16px;
-    line-height: 1.65;
-
-    color: #555;
+.invest .section-title{
+    color:#fff;
 }
 
-.project .btn {
-    font-size: 15px;
-    padding: 13px 20px;
+.invest .section-text{
+    color:#ddd;
 }
 
-
-/* =========================
-   ПРО OLIVA
-========================= */
-
-.oliva-section {
-    background: #e9eddb;
-    width: 100%;
+.invest-box{
+    max-width:850px;
+    margin:0 auto;
+    background:#303830;
+    border:1px solid #59634e;
+    border-radius:12px;
+    padding:30px;
 }
 
-.oliva-content {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 75px 24px;
+.invest-box ul{
+    list-style:none;
 }
 
-.oliva-title {
-    margin: 0 0 20px;
-
-    text-align: center;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(34px, 5vw, 56px);
-
-    color: #65752d;
+.invest-box li{
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.12);
+    font-size:17px;
+    line-height:1.5;
 }
 
-.oliva-text {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    text-align: center;
-
-    font-size: 19px;
-    line-height: 1.7;
+.invest-box li:last-child{
+    border-bottom:0;
 }
 
-
-/* =========================
-   ЗАТОКА
-========================= */
-
-.zatoka-section {
-    background: #dfeef0;
-    width: 100%;
+.invest-box strong{
+    color:#b8c66a;
 }
 
-.zatoka-content {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 75px 24px;
+/* CONTACTS */
+
+.contacts{
+    background:#eee8dc;
 }
 
-.zatoka-title {
-    margin: 0 0 20px;
-
-    text-align: center;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(34px, 5vw, 56px);
-
-    color: #28798c;
+.contact-box{
+    max-width:700px;
+    margin:0 auto;
+    text-align:center;
 }
 
-.zatoka-text {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    text-align: center;
-
-    font-size: 19px;
-    line-height: 1.7;
+.contact-name{
+    font-family:Georgia,serif;
+    font-size:30px;
+    margin-bottom:8px;
 }
 
-
-/* =========================
-   ШАМПУР HOUSE
-========================= */
-
-.shampur-section {
-    background: #eee4df;
-    width: 100%;
+.phone{
+    font-size:25px;
+    font-weight:bold;
+    color:#242b25;
+    margin:12px 0 25px;
 }
 
-.shampur-content {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 75px 24px;
+.social{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
 }
 
-.shampur-title {
-    margin: 0 0 20px;
-
-    text-align: center;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(34px, 5vw, 56px);
-
-    color: #8e263e;
+.social a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:145px;
+    padding:14px 20px;
+    border-radius:7px;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
 }
 
-.shampur-text {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    text-align: center;
-
-    font-size: 19px;
-    line-height: 1.7;
+.viber{
+    background:#665cac;
 }
 
-
-/* =========================
-   ІНВЕСТИЦІЇ
-========================= */
-
-.investment {
-    background: #242b24;
-    color: #ffffff;
-    width: 100%;
+.telegram{
+    background:#229ed9;
 }
 
-.investment-inner {
-    max-width: 1000px;
+/* FOOTER */
 
-    margin: 0 auto;
-
-    padding: 80px 24px;
-
-    text-align: center;
+footer{
+    background:#1c211d;
+    color:#bbb;
+    text-align:center;
+    padding:25px 16px;
+    font-size:14px;
+    line-height:1.6;
 }
 
-.investment h2 {
-    margin: 0 0 22px;
+/* MOBILE */
 
-    font-family: Georgia, "Times New Roman", serif;
+@media(max-width:850px){
 
-    font-size: clamp(34px, 5vw, 54px);
-}
-
-.investment p {
-    max-width: 780px;
-
-    margin: 0 auto 30px;
-
-    font-size: 18px;
-    line-height: 1.7;
-
-    color: #eeeeee;
-}
-
-.investment .btn {
-    margin-top: 10px;
-}
-
-
-/* =========================
-   КОНТАКТИ
-========================= */
-
-.contacts {
-    background: #f5f1e8;
-    width: 100%;
-}
-
-.contacts-inner {
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 75px 24px;
-
-    text-align: center;
-}
-
-.contacts h2 {
-    margin: 0 0 15px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(34px, 5vw, 52px);
-}
-
-.contacts-subtitle {
-    margin-bottom: 35px;
-
-    color: #666;
-
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.phone {
-    display: block;
-
-    margin-bottom: 30px;
-
-    color: #242b24;
-
-    font-size: clamp(25px, 5vw, 38px);
-
-    font-weight: bold;
-}
-
-.contact-buttons {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-}
-
-.contact-btn {
-    display: inline-flex;
-
-    justify-content: center;
-    align-items: center;
-
-    min-width: 150px;
-
-    padding: 15px 22px;
-
-    border-radius: 7px;
-
-    color: #ffffff;
-
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.phone-btn {
-    background: #242b24;
-}
-
-.viber-btn {
-    background: #7360a8;
-}
-
-.telegram-btn {
-    background: #299dcc;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    width: 100%;
-
-    background: #1c211c;
-
-    color: #cccccc;
-
-    text-align: center;
-
-    padding: 30px 20px;
-}
-
-.footer-logo {
-    margin-bottom: 10px;
-
-    color: #ffffff;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 23px;
-    font-weight: bold;
-}
-
-footer p {
-    margin: 5px 0;
-
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-
-/* =========================
-   МОБІЛЬНА ВЕРСІЯ
-========================= */
-
-@media (max-width: 800px) {
-
-    .header-inner {
-        padding: 22px 16px 0;
+    .projects-grid{
+        grid-template-columns:1fr;
     }
 
-    nav {
-        gap: 5px 15px;
-        padding: 22px 0 18px;
+    .project-image{
+        height:auto;
+        aspect-ratio:16/10;
     }
 
-    nav a {
-        font-size: 15px;
-    }
-
-    .hero {
-        min-height: 590px;
-    }
-
-    .hero-content {
-        padding: 60px 18px;
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .project-image-wrap {
-        height: auto;
-        aspect-ratio: 16 / 10;
-    }
-
-    .section,
-    .oliva-content,
-    .zatoka-content,
-    .shampur-content,
-    .investment-inner,
-    .contacts-inner {
-        padding-left: 18px;
-        padding-right: 18px;
+    .hero{
+        min-height:570px;
     }
 }
 
+@media(max-width:520px){
 
-/* =========================
-   ДУЖЕ МАЛЕНЬКИЙ ЕКРАН
-========================= */
-
-@media (max-width: 430px) {
-
-    .logo {
-        font-size: 27px;
-        letter-spacing: 1px;
+    header{
+        padding:20px 10px 17px;
     }
 
-    nav {
-        gap: 4px 11px;
+    .logo{
+        font-size:27px;
+        letter-spacing:1px;
     }
 
-    nav a {
-        font-size: 14px;
+    nav{
+        gap:13px 16px;
     }
 
-    .hero {
-        min-height: 560px;
+    nav a{
+        font-size:15px;
     }
 
-    .hero-content {
-        padding: 45px 16px;
+    section{
+        padding:50px 12px;
     }
 
-    .hero h1 {
-        font-size: 38px;
+    .hero{
+        padding:55px 15px;
     }
 
-    .hero-subtitle {
-        font-size: 20px;
+    .hero p{
+        font-size:16px;
     }
 
-    .hero-text {
-        font-size: 16px;
+    .project-content{
+        padding:20px;
     }
 
-    .btn {
-        width: 100%;
-        max-width: 300px;
+    .project h3{
+        font-size:27px;
     }
 
-    .project-body {
-        padding: 23px;
+    .invest-box{
+        padding:20px;
     }
 
-    .project-title {
-        font-size: 27px;
+    .social{
+        flex-direction:column;
     }
 
-    .contact-buttons {
-        flex-direction: column;
-    }
-
-    .contact-btn {
-        width: 100%;
-        max-width: 300px;
+    .social a{
+        width:100%;
     }
 }
-
 </style>
 </head>
 
-
 <body>
-
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
-<div class="header-inner">
-
     <div class="logo">
-        REST<span class="olive">EXTRA</span><span class="blue">GROUP</span>
+        REST<span>EXTRA</span>GROUP
     </div>
 
+    <div class="subtitle">
+        Авторські ресторанні проекти
+    </div>
 
     <nav>
-
         <a href="#projects">Проєкти</a>
-
         <a href="#zatoka">ЗАТОКА</a>
-
         <a href="#oliva">OLIVA EXTRA</a>
-
         <a href="#shampur">ШАМПУР HOUSE</a>
-
-        <a href="#investment">Інвестиції</a>
-
+        <a href="#invest">Інвестиції</a>
         <a href="#contacts">Контакти</a>
-
     </nav>
 
-</div>
+</header>
 
 
-<!-- HERO -->
+<section class="hero">
 
-<div class="hero">
-
-    <div class="hero-content">
+    <div class="hero-inner">
 
         <h1>
-            Авторські<br>
-            <span>ресторанні проєкти</span>
+            REST<span>EXTRA</span>GROUP
         </h1>
 
-        <div class="hero-subtitle">
-            RESTEXTRAGROUP
-        </div>
+        <h2>
+            Авторські ресторанні проєкти
+        </h2>
 
-        <p class="hero-text">
+        <p>
             Створюємо сучасні гастрономічні концепції,
             які поєднують сильний бренд, атмосферу
             та зрозумілу бізнес-модель.
@@ -825,60 +455,52 @@ footer p {
 
     </div>
 
-</div>
-
-</header>
+</section>
 
 
-<!-- =========================
-     PROJECTS
-========================= -->
+<section class="projects" id="projects">
 
-<section class="section" id="projects">
+<div class="container">
 
     <h2 class="section-title">
         Наші проєкти
     </h2>
 
-    <p class="section-intro">
-        Три різні концепції — три різні емоції,
-        об'єднані професійним підходом до ресторанного бізнесу.
+    <p class="section-text">
+        Три різні концепції — три самостійні ресторанні бренди,
+        готові до реалізації та залучення інвестицій.
     </p>
 
 
-    <div class="projects">
+    <div class="projects-grid">
 
 
-        <!-- OLIVA -->
+        <!-- OLIVA EXTRA -->
 
-        <article class="project">
+        <article class="project" id="oliva">
 
-            <div class="project-image-wrap">
+            <img
+                class="project-image"
+                src="oliva-extra.jpg"
+                alt="OLIVA EXTRA ресторан"
+                onerror="this.src='oliva.jpg'"
+            >
 
-                <img
-                    class="project-image"
-                    src="oliva-extra.jpg"
-                    alt="OLIVA EXTRA ресторан"
-                    loading="lazy"
-                >
+            <div class="project-content">
 
-            </div>
-
-
-            <div class="project-body">
-
-                <h3 class="project-title">
-                    OLIVA EXTRA
+                <h3>
+                    OLIVA <span>EXTRA</span>
                 </h3>
 
-                <p class="project-text">
-                    Ресторан італійської та середземноморської
-                    кухні. Атмосфера сонця, моря, оливок,
-                    вина та сучасної Італії.
+                <p>
+                    Ресторан у стилі сучасної Італії.
+                    Кухня сонця та моря, оливкова естетика,
+                    паста, морепродукти, вино та атмосфера
+                    середземноморського курорту.
                 </p>
 
-                <a class="btn" href="#oliva">
-                    Детальніше
+                <a class="btn" href="#contacts">
+                    Інвестиції та партнерство
                 </a>
 
             </div>
@@ -888,35 +510,30 @@ footer p {
 
         <!-- ZATOKA -->
 
-        <article class="project">
+        <article class="project" id="zatoka">
 
-            <div class="project-image-wrap">
+            <img
+                class="project-image"
+                src="zatoka.jpg"
+                alt="ЗАТОКА курортний ресторан"
+            >
 
-                <img
-                    class="project-image"
-                    src="zatoka.jpg"
-                    alt="ЗАТОКА курортний ресторан"
-                    loading="lazy"
-                >
+            <div class="project-content">
 
-            </div>
-
-
-            <div class="project-body">
-
-                <h3 class="project-title">
+                <h3>
                     ЗАТОКА
                 </h3>
 
-                <p class="project-text">
-                    Курортний ресторан нового покоління.
-                    Кухня моря, пляжний настрій,
-                    ALL INCLUSIVE, A LA CARTE
-                    та справжня курортна свобода.
+                <p>
+                    Курортний ресторан із концепцією
+                    «курортна кухня — курортна свобода».
+                    Середземноморська та морська кухня,
+                    ALL INCLUSIVE, A LA CARTE та особлива
+                    атмосфера відпочинку.
                 </p>
 
-                <a class="btn" href="#zatoka">
-                    Детальніше
+                <a class="btn" href="#contacts">
+                    Інвестиції та партнерство
                 </a>
 
             </div>
@@ -926,241 +543,148 @@ footer p {
 
         <!-- SHAMPUR -->
 
-        <article class="project">
+        <article class="project" id="shampur">
 
-            <div class="project-image-wrap">
+            <img
+                class="project-image"
+                src="shampur-house.jpg"
+                alt="ШАМПУР HOUSE ресторан"
+                onerror="this.src='shampur.jpg'"
+            >
 
-                <img
-                    class="project-image"
-                    src="shampur-house.jpg"
-                    alt="ШАМПУР HOUSE ресторан"
-                    loading="lazy"
-                >
+            <div class="project-content">
 
-            </div>
-
-
-            <div class="project-body">
-
-                <h3 class="project-title">
-                    ШАМПУР HOUSE
+                <h3>
+                    ШАМПУР <span>HOUSE</span>
                 </h3>
 
-                <p class="project-text">
-                    Сучасний grill-ресторан.
-                    М'ясо з вогню, шашлик,
-                    люля-кебаб, страви на відкритому
-                    вогні та сильна гастрономічна атмосфера.
+                <p>
+                    М'ясо з вогню, гриль, вино та друзі.
+                    Сучасний ресторан із виразним характером,
+                    відкритим грилем та сильною міською
+                    атмосферою.
                 </p>
 
-                <a class="btn" href="#shampur">
-                    Детальніше
+                <a class="btn" href="#contacts">
+                    Інвестиції та партнерство
                 </a>
 
             </div>
 
         </article>
 
+
     </div>
+
+</div>
 
 </section>
 
 
-<!-- =========================
-     OLIVA
-========================= -->
+<section class="invest" id="invest">
 
-<section class="oliva-section" id="oliva">
+<div class="container">
 
-    <div class="oliva-content">
+    <h2 class="section-title">
+        Інвестиції
+    </h2>
 
-        <h2 class="oliva-title">
-            OLIVA EXTRA
-        </h2>
+    <p class="section-text">
+        Шукаємо інвестора-партнера для реалізації
+        ресторанних проєктів RESTEXTRAGROUP.
+    </p>
 
-        <p class="oliva-text">
-            <strong>Кухня сонця та моря.</strong>
-            Італійська гастрономічна культура,
-            середземноморські продукти, оливкова олія,
-            паста, морепродукти, вино та атмосфера
-            європейського ресторану.
-        </p>
+    <div class="invest-box">
 
-    </div>
+        <ul>
 
-</section>
+            <li>
+                <strong>Формат:</strong>
+                приватний інвестор / партнер
+            </li>
 
+            <li>
+                <strong>Площа проєкту:</strong>
+                орієнтовно 300–500+ м²
+            </li>
 
-<!-- =========================
-     ZATOKA
-========================= -->
+            <li>
+                <strong>Інвестиції:</strong>
+                від $100 000 залежно від формату
+            </li>
 
-<section class="zatoka-section" id="zatoka">
+            <li>
+                <strong>Модель:</strong>
+                готова концепція + бренд + меню +
+                бізнес-модель
+            </li>
 
-    <div class="zatoka-content">
+            <li>
+                <strong>Мета:</strong>
+                створення мережі авторських ресторанів
+            </li>
 
-        <h2 class="zatoka-title">
-            ЗАТОКА
-        </h2>
-
-        <p class="zatoka-text">
-            <strong>Курортна кухня. Курортна свобода.</strong>
-            Концепція поєднує кухню моря,
-            пляжний формат, ALL INCLUSIVE,
-            A LA CARTE та атмосферу відпочинку.
-            Це ресторан, який переносить
-            настрій українського курорту в місто.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     SHAMPUR
-========================= -->
-
-<section class="shampur-section" id="shampur">
-
-    <div class="shampur-content">
-
-        <h2 class="shampur-title">
-            ШАМПУР HOUSE
-        </h2>
-
-        <p class="shampur-text">
-            <strong>Гриль · Вино · Друзі.</strong>
-            М'ясо з вогню, шашлик,
-            люля-кебаб, гриль-страви,
-            вино та жива атмосфера.
-            Формат створений для людей,
-            які люблять справжній смак вогню.
-        </p>
+        </ul>
 
     </div>
 
-</section>
-
-
-<!-- =========================
-     INVESTMENT
-========================= -->
-
-<section class="investment" id="investment">
-
-    <div class="investment-inner">
-
-        <h2>
-            Інвестиції та партнерство
-        </h2>
-
-        <p>
-            RESTEXTRAGROUP шукає інвесторів та партнерів
-            для запуску ресторанних проєктів.
-        </p>
-
-        <p>
-            Готові концепції, бренд, дизайн,
-            гастрономічна ідея та бізнес-модель
-            можуть бути адаптовані під конкретну локацію
-            та формат інвестування.
-        </p>
-
-        <a class="btn" href="#contacts">
-            Обговорити інвестиції
-        </a>
-
-    </div>
+</div>
 
 </section>
 
-
-<!-- =========================
-     CONTACTS
-========================= -->
 
 <section class="contacts" id="contacts">
 
-    <div class="contacts-inner">
+<div class="container">
 
-        <h2>
-            Контакти
-        </h2>
+    <h2 class="section-title">
+        Контакти
+    </h2>
 
-        <p class="contacts-subtitle">
-            Автор проєктів — Носов Олександр
-        </p>
+    <div class="contact-box">
 
+        <div class="contact-name">
+            Носов Олександр
+        </div>
 
-        <!-- ТЕЛЕФОН -->
+        <div class="phone">
+            067 738 61 90
+        </div>
 
-        <a
-            class="phone"
-            href="tel:+380677386190"
-        >
-            +38 067 738 61 90
-        </a>
+        <div class="social">
 
-
-        <div class="contact-buttons">
-
-
-            <!-- TELEGRAM -->
-
+            <!-- ЗАМЕНИ ССЫЛКИ НИЖЕ НА СВОИ -->
             <a
-                class="contact-btn telegram-btn"
-                href="https://t.me/+380677386190"
-                target="_blank"
-                rel="noopener"
-            >
-                Telegram
-            </a>
-
-
-            <!-- VIBER -->
-
-            <a
-                class="contact-btn viber-btn"
+                class="viber"
                 href="viber://chat?number=%2B380677386190"
             >
                 Viber
             </a>
 
-
-            <!-- PHONE -->
-
             <a
-                class="contact-btn phone-btn"
-                href="tel:+380677386190"
+                class="telegram"
+                href="https://t.me/"
+                target="_blank"
             >
-                Зателефонувати
+                Telegram
             </a>
 
         </div>
 
     </div>
 
+</div>
+
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
 
-    <div class="footer-logo">
-        RESTEXTRAGROUP
-    </div>
+    RESTEXTRAGROUP © 2026
 
-    <p>
-        Авторські ресторанні проєкти
-    </p>
+    <br>
 
-    <p>
-        © 2026 RESTEXTRAGROUP
-    </p>
+    Авторські ресторанні проєкти та інвестиційне партнерство
 
 </footer>
 
